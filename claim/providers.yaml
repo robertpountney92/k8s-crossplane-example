@@ -3,7 +3,7 @@ kind: ProviderConfig
 metadata:
   name: default
 spec:
-  projectID: crossplane-example-2021063011
+  projectID: REPLACE_ME
   credentials:
     source: Secret
     secretRef:

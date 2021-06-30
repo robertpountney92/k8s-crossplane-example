@@ -7,9 +7,9 @@ Crossplane utilises the underlying functionality of kubernetes to define resourc
 Crossplane runs ontop of kubernetes and rherefore you must already have a K8s cluster in order to install and use crossplane.
 
 #### Key Terms 
-`Managed Resources` Resouces that map directly to provider resources (i.e. GCP CloudSQLInstance)
-`Composite Resources (XRs)` A custom resource that is composed of other resources, its schema is user-defined.
-`Composite Resource Claims (XRCs)` Declares that an application requires particular kind of infrastructure, as well as specifying how to configure it. An XRC is a namespaced proxy for an XR.
+* `Managed Resources` Resouces that map directly to provider resources (i.e. GCP CloudSQLInstance)
+* `Composite Resources (XRs)` A custom resource that is composed of other resources, its schema is user-defined.
+* `Composite Resource Claims (XRCs)` Declares that an application requires particular kind of infrastructure, as well as specifying how to configure it. An XRC is a namespaced proxy for an XR.
 
 XRs are cluster scoped - they exist outside of any namespace. This allows an XRs to represent infrastructure that might be consumed from several different namespaces. An application team may be limited to one namespace, but stil require infrastructure. This infrastructure is made available to application teams via XRCs 
 
@@ -111,7 +111,7 @@ Install your configuration package on you cluster
 ### Claim Your Infrastructure
 Update `providers.yaml` to use your newly created `PROJECT_ID`
 
-    sed -i "s/<YOUR_PROJECT_ID>/$PROJECT_ID/g" claim/providers.yaml
+    sed -i '' "s/REPLACE_ME/$PROJECT_ID/g" claim/providers.yaml
 
 Create a XRC (Composite resource claim) for a postgres instance
 
