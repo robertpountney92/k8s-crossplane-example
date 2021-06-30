@@ -132,6 +132,8 @@ When the pod is created check logs to check the pod successfully connected to da
 
 ### Clean up
 
+    kubectl delete -f pod.yaml
+    kubectl delete -f claim/
     kubectl delete crossplane --all
     kubectl delete ns crossplane-system
 
