@@ -1,10 +1,10 @@
 ## Overview ##
-This repo demonstrates the capabilities of `crossplane` by implementing a simple example.
+This repo demonstrates the capabilities of `Crossplane` by implementing a simple example.
 
-Crossplane is a k8s native infrastructure provisioning tool that allows you to define you desirsed infrastructure declarativey uskng kubernetes manefests. 
+Crossplane is a k8s native infrastructure provisioning tool that allows you to define you desired infrastructure declaratively using Kubernetes manifests. 
 
-Crossplane utilises the underlying functionality of kubernetes to define resources in a self-healing fashion. Meaning that if a infrastructure resource is destroyed it will be recreated automatically to match the desired state, much in the same way a pod would be when created as part of a deployment.
-Crossplane runs ontop of kubernetes and rherefore you must already have a K8s cluster in order to install and use crossplane.
+Crossplane utilises the underlying functionality of Kubernetes to define resources in a self-healing fashion. Meaning that if an infrastructure resource is destroyed it will be recreated automatically to match the desired state, much in the same way a pod would be when created as part of a deployment.
+Crossplane runs on-top of Kubernetes and therefore you must already have a K8s cluster in order to install and use Crossplane.
 
 #### Key Terms 
 * `Managed Resources` Resouces that map directly to provider resources (i.e. GCP CloudSQLInstance)
@@ -16,7 +16,7 @@ XRs are cluster scoped - they exist outside of any namespace. This allows an XRs
 ## Prerequisites ##
 
 * Existing Kuberenes Cluster (or create local cluster: [kind](https://kind.sigs.k8s.io/docs/user/quick-start/))
-* [Kubectl](https://kubernetes.io/docs/tasks/tools/) 
+* [Kubectl](https://Kubernetes.io/docs/tasks/tools/) 
 * [helm](https://helm.sh/docs/intro/install/)
 * [GCP Account](https://cloud.google.com/) 
 * [gcloud cli](https://cloud.google.com/sdk/docs/install)
